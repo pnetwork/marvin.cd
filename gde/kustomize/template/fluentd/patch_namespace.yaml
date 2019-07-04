@@ -1,0 +1,3 @@
+- op: replace
+  path: /metadata/name
+  value: __NS_DEFAULT__
