@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: workflow-preview
+  name: app-workflow-preview
 spec:
   project: default
   source:

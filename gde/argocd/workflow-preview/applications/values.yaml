@@ -3,7 +3,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     targetRevision: HEAD
-    repoURL: git@github.com:pnetwork/marvin.cd.git
+    repoURL: https://github.com/pnetwork/marvin.cd.git
 #  jenkins:
 #    path: jenkins
 #    targetRevision: HEAD

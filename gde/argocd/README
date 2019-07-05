@@ -1,8 +1,11 @@
 see: https://argoproj.github.io/argo-cd/operator-manual/cluster-bootstrapping/
 
-argocd app create applications \
+# --sync-policy none 
+# --sync-policy automated
+
+argocd app create app-workflow-preview \
     --dest-namespace argocd \
     --dest-server https://kubernetes.default.svc \
-    --repo git@github.com:pnetwork/marvin.cd.git \
-    --path /gde/argocd/workflow-preview/applications/ \
-    --sync-policy automated 
+    --repo https://github.com/pnetwork/marvin.cd.git \
+    --path gde/argocd/workflow-preview/applications/ \
+    --sync-policy none 
