@@ -4,3 +4,9 @@
   value:
     name: "FLUENTD_ELASTICSEARCH_IP"
     value: "elasticsearch.$(POD_NAMESPACE)"
+- op: replace
+  path: /spec/template/spec/serviceAccount
+  value: fluentd-workflow-preview
+- op: replace
+  path: /spec/template/spec/serviceAccountName
+  value: fluentd-workflow-preview
