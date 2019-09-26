@@ -25,15 +25,15 @@ images:
 #  literals:
 #  - data01=192.168.89.95
 
-patchesJson6902:
-- path: patch_env.yaml
-  target:
-    group: extensions
-    kind: DaemonSet
-    name: fluentd
-    version: v1beta1
-- path: patch_certs.yaml
-  target:
-    kind: Secret
-    name: fluentd-certs
-    version: v1
+#patchesJson6902:
+#- path: patch_env.yaml
+#  target:
+#    group: extensions
+#    kind: DaemonSet
+#    name: fluentd
+#    version: v1beta1
+#- path: patch_certs.yaml
+#  target:
+#    kind: Secret
+#    name: fluentd-certs
+#    version: v1
